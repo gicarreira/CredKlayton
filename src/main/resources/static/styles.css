@@ -108,6 +108,8 @@ button.css3button {
   background-color: white;
   color: white;
   text-align: space-between;
+  overflow: auto;
+  padding: 0 10px;
 }
 }
 
