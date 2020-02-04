@@ -97,17 +97,19 @@ button.css3button {
 		0px 1px 0px rgba(255,255,255,0.3);
 }
 
-.products{
-    display: flex;
-    justify-content: space-around;
+.footer {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: white;
+  text-align: center;
+}
 }
 
-.products div{
-    width: 30%;
-    text-align: center;
-}
-
-.products img{
-    width: 100%;
-    border-radius: 15px;
+.rodape{
+font-size: 20px;
 }
