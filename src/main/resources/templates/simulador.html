@@ -19,13 +19,26 @@
         <h1>Faça sua simulação:</h1>
         <div class="campo">
             <label style="font-size: 22px;">Tipo de empréstimo: </label>
-            <input type="text" name="tipoEmprestimo">
+            <select name="tipoEmprestimo">
+                <option value="--">--</option>
+                <option value="imovel">Imóvel</option>
+                <option value="veiculo">Veículo</option>
+                <option value="pessoal">Pessoal</option>
+            </select>
+
+            <label style="font-size: 22px;">Parcelas: </label>
+            <select name="parcelas">
+                <option value="--">--</option>
+                <option value="12">12x</option>
+                <option value="24">24x</option>
+                <option value="36">36x</option>
+                <option value="48">48x</option>
+                <option value="60">60x</option>
+            </select>
 
             <label style="font-size: 22px;">Valor: </label>
             <input type="text" name="valorEmprestimo">
 
-            <label style="font-size: 22px;">Parcelas: </label>
-            <input type="text" name="parcelas">
         </div>
         <button type="button" name="simulacao" value="simulacao" class="css3button" style="font-size: 19px;line-height: 1.2;letter-spacing: 0.123em;">Simular</button>
     </form>
