@@ -122,7 +122,6 @@ button.css3button {
 
 .footer {
   font-size: 20px;
-  position: flex-end;
   display: flex;
   justify-content: space-around;
   left: 0;

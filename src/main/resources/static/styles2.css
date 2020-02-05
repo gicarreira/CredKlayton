@@ -97,20 +97,19 @@ button.css3button {
 		0px 1px 0px rgba(255,255,255,0.3);
 }
 
- .footer {
-   font-size: 20px;
-   position: flex-end;
-   display: flex;
-   justify-content: space-around;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: white;
-   color: white;
-   align-items: center;
-   padding: 0 10px;
- }
+.footer {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: white;
+  align-items: center;
+  padding: 0 10px;
+}
 
- .rodape{
- font-size: 20px;
- }
+.rodape{
+font-size: 20px;
+}
