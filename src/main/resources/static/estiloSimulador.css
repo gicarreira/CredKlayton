@@ -96,6 +96,14 @@ body, html {
   font-size: 22px;
 }
 
+.hero-form h1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center
+}
+
 button.css3button {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 20px;
