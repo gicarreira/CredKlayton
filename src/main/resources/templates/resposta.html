@@ -1,11 +1,12 @@
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CredKlayton - Simulador</title>
-    <link rel="stylesheet" href="styles2.css">
-    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho&amp;display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>CredKlayton - Resultado</title>
+<link rel="stylesheet" href="styles3.css">
+<link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho&amp;display=swap" rel="stylesheet">
 </head>
+
 <body style="font-size: 11px;">
 <div class="header">
     <a href="/"><img src="https://lh3.googleusercontent.com/hK4bvDzJ1bBYsokPw14kBI1gBa1aXB0MeArRO2pjjkJns2iG6aad2ocHtf3Asr7DjoPVDe-ymfV3WsV7J3t4_SBG58nHQvCtJgOc2YuGCCO8im3VJO45EmMjLwNqJVtk8kYDo00gL93w_MX4C8eMFogpw9TD0CUErGZlzR9E7IaJM8jTGmIem7bRljUbER0Y6sijjENTU8s623bcGCqWyZzbHSgG2CXRKCOEVpNIhEbyhXwXx0ozcTNN6CyOGsWthAL5qCinUmPwGMR6ilRP6aG4wbCJ92dfKPpIh5Fjmct8u_bncr0n44MJya0VIh5pk_aN28BbLg5IexoDZjxwDrWchUdx_-bW4xlYfP2lqdsCdx4i1-Lz1OoFMlYFmNUh94EBCmRjCRfON_ygTdPP1twtLiI-cOutVS8p7GLPuN2eMfAo2gWW_zRM47UHBLDCUErJfbRKMAW4pewTj4hCsnVy6rqqOjNh3oka3ujiD6auSyQ2I7kOlXj7Wy_b99UGcd8lB7YNlPNqmRpLhSZe6S4z8DtCjk3q0mefyfZBjsq9Ayl91zkSOOI1gLEUhiTyK-ROHHeKunayukb1n0-uxuHAHprByz1_sIjDQ8RIcmK9R30ILJbsdJF3wh2HICt8txwtnM9NJkymHj_klmpacP2lPDuo0d1MhIR8-kfPO7a2XWrCqJ-QF_9r=s512-no" alt="logo"></a>
@@ -14,35 +15,14 @@
     </h1>
 </div>
 
-<div class="hero-image">
-    <form class="hero-form" style="letter-spacing: 0.011em;font-weight: ;height: 400px;width: 500px;">
-        <h1>Faça sua simulação:</h1>
-        <div class="campo">
-            <label style="font-size: 22px;">Tipo de empréstimo: </label>
-            <select name="tipoEmprestimo">
-                <option value="--">--</option>
-                <option value="imovel">Imóvel</option>
-                <option value="veiculo">Veículo</option>
-                <option value="pessoal">Pessoal</option>
-            </select>
-
-            <label style="font-size: 22px;">Parcelas: </label>
-            <select name="parcelas">
-                <option value="--">--</option>
-                <option value="12">12x</option>
-                <option value="24">24x</option>
-                <option value="36">36x</option>
-                <option value="48">48x</option>
-                <option value="60">60x</option>
-            </select>
-
-            <label style="font-size: 22px;">Valor: </label>
-            <input type="text" name="valorEmprestimo">
-
-        </div>
-        <a href="/resposta"><button type="button" name="resposta" value="resposta" class="css3button">Simular</button></a>
-    </form>
+<div th:each="banco: ${bancos}">
+    <p><span th:text="${banco.nome}"></span></p>
+    <img th:src="${banco.imagem}" width="10%">
+    <p>Juros: R$ <span th:text="${banco.juros}"></span></p>
+    <p>Total do Emprestimo: R$ <span th:text="${banco.totalEmprestimo}"></span></p>
+    <p>Total de cada parcela: R$ <span th:text="${banco.totalParcela}"></span></p>
 </div>
+
 
 <div class="rodape" style=" text-align: center;">
     <p class="em-wider" style="font-size: 10px;">Parceiros: <br></p>
@@ -57,6 +37,5 @@
         <img src="https://seeklogo.com/images/B/Banco_do_Brasil-logo-68C92EDFE8-seeklogo.com.png" style="width: 30px;padding-right: 100px;">
     </p>
 </div>
-
 
 </body>
