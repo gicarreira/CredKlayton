@@ -9,4 +9,7 @@ public class TesteController {
     public String mostrarHome(){
         return "index";
     }
+
+    @GetMapping("/simulador")
+    public String simuladorPagina() {return "simulador"; }
 }
