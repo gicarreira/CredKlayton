@@ -9,13 +9,15 @@ a{
 }
 
 form{
-    width: 50%;
+    width: 75%;
     margin: auto;
 }
 
 input{
-    display: block;
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+    width: 75%;
     padding: 10px;
     margin: 5px 0;
 }
@@ -63,15 +65,25 @@ body, html {
 .hero-form {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-align: flex-start;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   background-color: black;
-  background-size: 65%;
+
+}
+
+.campo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: space-between;
+  width: 90%
 }
 
 button.css3button {
