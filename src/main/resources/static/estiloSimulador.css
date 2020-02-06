@@ -9,17 +9,18 @@ a{
     text-decoration: none;
 }
 
-form{
-    width: 75%;
-    margin: auto;
-}
 
-input{
+.container
+
+
+.container input{
     display: flex;
     justify-content: space-between;
+    align-self: baseline;
+    align-items: baseline;
     overflow: auto;
     width: 75%;
-    padding: 10px;
+    padding: px;
     margin: 5px 0;
 }
 
@@ -54,54 +55,67 @@ body, html {
     height: 100%;
 }
 
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.xerpa.com.br/blog/wp-content/uploads/sites/2/2017/06/tendencias-mercado-financeiro-brasileiro.png");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.hero-form {
+.container {
   display: flex;
   flex-direction: column;
-  letter-spacing: 0.011em;
-  font-weight:
-  height: 400px;
-  width: 500px;"
-  align-items: center;
-  justify-content: center;
-  text-align: flex-start;
-  position: absolute;
+  letter-spacing: 1;
+  label-size: 20px
+  justify-content: space-evenly;
+  position: fixed;
+  max-width: 100%;
+  padding: 100;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  background-color: black;
+  background-color:rgba(0, 0, 0, 0.8);
 
 }
 
-.hero-form h1 {
 
+.hero-image {
+  display: flex;
+  flex-direction: row;
+  background-image: url("https://media.giphy.com/media/j799vOJwBbKEGvLAQ4/giphy.gif");
+  height: 100%;
+  background-position: center;
+  background-repeat: repeat;
+  position: relative;
+  text-align: center;
 }
+
+.hero-form{
+  display: flex;
+  flex-direction: row;
+  align-content: baseline;
+  justify-content: space-evenly;
+  position: fixed;
+  align-items: space-evenly;
+  text-align: space-evenly;
+}
+
 
 .campo{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  font-size: 20px
+  flex-direction: row;
+  align-self: auto;
+  align-content: baseline;
+  justify-content: space-between;
   text-align: space-between;
-  width: 90%
-  font-size: 22px;
+  width: 100%
+  font-size: 30px;
+  align-items: baseline;
 }
 
-.hero-form h1{
+.container h1{
+  font-family: 'Sawarabi Mincho', sans-serif;
+  position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center
+  text-align: center;
 }
 
 button.css3button {

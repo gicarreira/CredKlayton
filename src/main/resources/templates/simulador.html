@@ -8,25 +8,29 @@
 </head>
 <body>
 <div class="header">
-    <a href="/"><img src="https://lh3.googleusercontent.com/hK4bvDzJ1bBYsokPw14kBI1gBa1aXB0MeArRO2pjjkJns2iG6aad2ocHtf3Asr7DjoPVDe-ymfV3WsV7J3t4_SBG58nHQvCtJgOc2YuGCCO8im3VJO45EmMjLwNqJVtk8kYDo00gL93w_MX4C8eMFogpw9TD0CUErGZlzR9E7IaJM8jTGmIem7bRljUbER0Y6sijjENTU8s623bcGCqWyZzbHSgG2CXRKCOEVpNIhEbyhXwXx0ozcTNN6CyOGsWthAL5qCinUmPwGMR6ilRP6aG4wbCJ92dfKPpIh5Fjmct8u_bncr0n44MJya0VIh5pk_aN28BbLg5IexoDZjxwDrWchUdx_-bW4xlYfP2lqdsCdx4i1-Lz1OoFMlYFmNUh94EBCmRjCRfON_ygTdPP1twtLiI-cOutVS8p7GLPuN2eMfAo2gWW_zRM47UHBLDCUErJfbRKMAW4pewTj4hCsnVy6rqqOjNh3oka3ujiD6auSyQ2I7kOlXj7Wy_b99UGcd8lB7YNlPNqmRpLhSZe6S4z8DtCjk3q0mefyfZBjsq9Ayl91zkSOOI1gLEUhiTyK-ROHHeKunayukb1n0-uxuHAHprByz1_sIjDQ8RIcmK9R30ILJbsdJF3wh2HICt8txwtnM9NJkymHj_klmpacP2lPDuo0d1MhIR8-kfPO7a2XWrCqJ-QF_9r=s512-no" alt="logo"></a>
+    <a href="/"><img src="https://lh3.googleusercontent.com/611pwlkicgxFnJf7VKm2rJHRdzktSgPT_wfpFU1-UQlOCBkfFbtJS0nUirCwgEs3JsvgVNUEfADNaHv-ho1hU7miTiRfY51GzVRtZNQBhINjUxG6xy8Lb8SmXgWAvoBwpAdVRDAKefhETGpxegqKlBnTg6skfMbJ8wqFf_wqbtR-ocjs84x9jgKUxQWO4jqHgM1GTxH9n63T9PajPEBfpA_5MaM9O-vlu3FWF3eymwAAqduaPJI_YYnNZVMfp0PHoQxU31XyFNDXWg0QW91sJ8jbKlvERvignGMcAzYgxd8pLl4_p2HQX2lHR_vmOArZPflIG6Fs6yubCrlvNGUGhZ3MHhCaf1maXS-gc-q6srvOXTtqFQ9oRLWN4YI4Yo6BcnXsmcQuqrNN0smc6HObkCm8u-HZ9cxPRus7wZag0Cau8nG-ApOHQRXjKefGJgndNgnFVPcWzT7Hj8Z7GFdxHxEyde0lwvzhkrXDhAxIzRJVc2tlViqUa-1UEy_LCXNP7XL2IP6k07fjQVqbxSoQ75BazZjLXujMnoWd-igoRMqbzqtusFoVhW3x_yPZlmoKp-Xy8VFkVoGLprWMb_e3GV3SIMgbUH7vR3C6zQcmK1-rtRQXhum0zvX9jThiGSgfO0_9MKzvXOG4d7aYvDIkGW0CBdnKhTThSqHfFZ34wtjIUYMBo7slIon71drciA=s512-no" alt="logo"></a>
     <h1>
         <a href="/">CredKlayton</a>
     </h1>
 </div>
 
 <div class="hero-image">
-    <form class="hero-form">
-        <h1>Faça sua simulação:</h1>
+    <div class="hero-form">
+    <form action="/resposta" class="container">
+        <p><h1>Faça sua simulação:</h1></p>
         <div class="campo">
-            <label>Tipo de empréstimo: </label>
-            <select name="tipoEmprestimo">
+            <p><label>Tipo de empréstimo: </label></p> &nbsp;&nbsp;
+            <p>
+                <select name="tipoEmprestimo">
                 <option value="--">--</option>
                 <option value="imovel">Imóvel</option>
                 <option value="veiculo">Veículo</option>
                 <option value="pessoal">Pessoal</option>
-            </select>
-
-            <label>Parcelas: </label>
+                </select>
+            </p>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <p><label>Parcelas: </label></p> &nbsp;&nbsp;
+            <p>
             <select name="parcelas">
                 <option value="--">--</option>
                 <option value="12">12x</option>
@@ -35,14 +39,21 @@
                 <option value="48">48x</option>
                 <option value="60">60x</option>
             </select>
-
-            <label>Valor: </label>
+            </p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <p><label>Valor: </label></p> &nbsp;&nbsp;
+            <p>
             <input type="text" name="valorEmprestimo">
-
+            </p>
         </div>
 
-        <a href="/resposta"><button type="button" name="resposta" value="resposta" class="css3button">Simular</button></a>
-    </form>
+
+        <br/>
+        <br/>
+
+            <a href="/resposta"><button type="button" name="resposta" value="resposta" class="css3button">Simular</button></a>
+        </form>
+    </div>
 </div>
 
 <div class="rodape">
