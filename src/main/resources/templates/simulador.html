@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="estiloSimulador.css">
     <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho&amp;display=swap" rel="stylesheet">
 </head>
+
 <body>
 <div class="header">
     <a href="/"><img src="https://lh3.googleusercontent.com/611pwlkicgxFnJf7VKm2rJHRdzktSgPT_wfpFU1-UQlOCBkfFbtJS0nUirCwgEs3JsvgVNUEfADNaHv-ho1hU7miTiRfY51GzVRtZNQBhINjUxG6xy8Lb8SmXgWAvoBwpAdVRDAKefhETGpxegqKlBnTg6skfMbJ8wqFf_wqbtR-ocjs84x9jgKUxQWO4jqHgM1GTxH9n63T9PajPEBfpA_5MaM9O-vlu3FWF3eymwAAqduaPJI_YYnNZVMfp0PHoQxU31XyFNDXWg0QW91sJ8jbKlvERvignGMcAzYgxd8pLl4_p2HQX2lHR_vmOArZPflIG6Fs6yubCrlvNGUGhZ3MHhCaf1maXS-gc-q6srvOXTtqFQ9oRLWN4YI4Yo6BcnXsmcQuqrNN0smc6HObkCm8u-HZ9cxPRus7wZag0Cau8nG-ApOHQRXjKefGJgndNgnFVPcWzT7Hj8Z7GFdxHxEyde0lwvzhkrXDhAxIzRJVc2tlViqUa-1UEy_LCXNP7XL2IP6k07fjQVqbxSoQ75BazZjLXujMnoWd-igoRMqbzqtusFoVhW3x_yPZlmoKp-Xy8VFkVoGLprWMb_e3GV3SIMgbUH7vR3C6zQcmK1-rtRQXhum0zvX9jThiGSgfO0_9MKzvXOG4d7aYvDIkGW0CBdnKhTThSqHfFZ34wtjIUYMBo7slIon71drciA=s512-no" alt="logo"></a>
@@ -17,9 +18,9 @@
 <div class="hero-image">
     <div class="hero-form">
     <form action="/resposta" class="container">
-        <p><h1>Faça sua simulação:</h1></p>
+        <p><h1>Faça sua simulação de empréstimo:</h1></p>
         <div class="campo">
-            <p><label>Tipo de empréstimo: </label></p> &nbsp;&nbsp;
+            <p><label>Tipo: </label></p> &nbsp;&nbsp;
             <p>
                 <select name="tipoEmprestimo">
                 <option value="--">--</option>
@@ -27,8 +28,8 @@
                 <option value="veiculo">Veículo</option>
                 <option value="pessoal">Pessoal</option>
                 </select>
-            </p>
-           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
             <p><label>Parcelas: </label></p> &nbsp;&nbsp;
             <p>
             <select name="parcelas">
@@ -46,10 +47,6 @@
             <input type="text" name="valorEmprestimo">
             </p>
         </div>
-
-
-        <br/>
-        <br/>
 
             <a href="/resposta"><button type="button" name="resposta" value="resposta" class="css3button">Simular</button></a>
         </form>
